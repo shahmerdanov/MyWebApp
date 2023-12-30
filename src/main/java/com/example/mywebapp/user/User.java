@@ -16,11 +16,11 @@ public class User {
     @Column(length = 15, nullable = false)
     private String password;
 
-    @Column(length = 20, nullable = false, name = "ad")
-    private String firstname;
+    @Column(length = 20, nullable = false, name = "first_name")
+    private String firstName;
 
-    @Column(length = 20, nullable = false, name = "soyad")
-    private String lastname;
+    @Column(length = 20, nullable = false, name = "last_name")
+    private String lastName;
 
     public Integer getId() {
         return id;
@@ -49,21 +49,21 @@ public class User {
         return this;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public User setFirstname(String firstname) {
-        this.firstname = firstname;
+    public User setFirstName(String firstName) {
+        this.firstName = firstName;
         return this;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public User setLastname(String lastname) {
-        this.lastname = lastname;
+    public User setLastName(String lastName) {
+        this.lastName = lastName;
         return this;
     }
 
@@ -73,8 +73,8 @@ public class User {
                 "id=" + id +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
+                ", firstname='" + firstName + '\'' +
+                ", lastname='" + lastName + '\'' +
                 '}';
     }
 }
