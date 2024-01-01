@@ -22,12 +22,23 @@ public class User {
     @Column(length = 20, nullable = false, name = "last_name")
     private String lastName;
 
+    private boolean enabled;
+
     public Integer getId() {
         return id;
     }
 
     public User setId(Integer id) {
         this.id = id;
+        return this;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public User setEnabled(boolean enabled) {
+        this.enabled = enabled;
         return this;
     }
 
