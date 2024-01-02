@@ -16,10 +16,10 @@ public class User {
     @Column(length = 15, nullable = false)
     private String password;
 
-    @Column(length = 20, nullable = false, name = "first_name")
+    @Column(length = 45, nullable = false, name = "first_name")
     private String firstName;
 
-    @Column(length = 20, nullable = false, name = "last_name")
+    @Column(length = 45, nullable = false, name = "last_name")
     private String lastName;
 
     private boolean enabled;
